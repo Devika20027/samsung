@@ -1,0 +1,1565 @@
+@font-face {
+    font-family: 'SamsungOne 400';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SamsungOne 400'), url('fonts/SamsungOne-400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SamsungOne 700';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SamsungOne 700'), url('fonts/SamsungOne-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Samsung Sharp Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Bold'), url('fonts/SamsungSharpSans-Bold.woff') format('woff');
+}
+
+
+
+body {
+    font-family: 'SamsungOne 400', Arial, sans-serif; /* Fallback to Arial if SamsungOne is not available */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 70px 20px 0px;
+
+}
+
+.left-section, .right-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 125px;
+    margin-right: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    padding: 5px 10px;
+}
+
+.menu a:hover {
+    color: #fff;
+    background-color: #000;
+    border-radius: 50px; /* Circular background */
+    /* padding-bottom: 30px; */
+}
+
+
+.right-section .menu {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.icon a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.dropdown {
+    display: none;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .42) 100vw, transparent calc(50vw + 1100px));
+    width: 100%;
+    top: 72px;
+    left: 0;
+    position: absolute;
+}
+
+
+.dropdown-cont{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    background-color: #fff; /* Example background color */
+    /* box-shadow: 8px 16px rgba(0,0,0,0.2); */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: max-content; 
+    border-radius:0px 0px 10px 10px;
+    display: flex;
+    gap: 100px;
+    border-top: 1px solid #c2c2c2c9;
+}
+
+
+.dropdown  a{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown.show {
+    display: flex;
+}
+
+.dropdown-section {
+    padding: 20px;
+}
+
+.dropdown-section h3 {
+    font-family: 'SamsungOne 700';
+    margin-top: 0;
+    font-size: 14px;
+    font-weight:bold;
+    color: #000;
+}
+
+.dropdown-section ul {
+    font-family: 'SamsungOne 700';
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dropdown-section ul li {
+    margin: 10px 0px;
+}
+
+.dropdown-section ul li a {
+    /* text-decoration: none; */
+    color: #7c7b7b;
+    font-size: 12.5px;
+    font-weight: lighter;
+}
+
+.dropdown-section ul li a:hover {
+    background-color: transparent;
+    /* text-decoration: underline; */
+    color: #000;
+    padding: 0px;;
+}
+
+
+/* --------------------------------------- */
+.dropdowne {
+    display: none;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .42) 100vw, transparent calc(50vw + 1100px));
+    width: 100%;
+    top: 72px;
+    left: 0;
+    position: absolute;
+}
+.dropdowne-cont{
+    position: absolute;
+    top: 0;
+    left: 287px;
+    background-color: #fff; /* Example background color */
+    /* box-shadow: 8px 16px rgba(0,0,0,0.2); */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: max-content; 
+    border-radius:0px 0px 10px 10px;
+    display: flex;
+    gap: 100px;
+    border-top: 1px solid #c2c2c2c9;
+}
+
+.dropdowne  a{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdowne.show {
+    display: flex;
+}
+
+.dropdowne-section {
+    padding: 20px;
+}
+
+/* .dropdowne-section h3 {
+    font-family: 'SamsungOne 700';
+    margin-top: 0;
+    font-size: 14px;
+    font-weight:bold;
+    color: #000;
+} */
+
+.dropdowne-section ul {
+    font-family: 'SamsungOne 700';
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dropdowne-section ul li {
+    margin: 10px 0px;
+}
+
+.dropdowne-section ul li a {
+    /* text-decoration: none; */
+    color: #7c7b7b;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.dropdowne-section ul li a:hover {
+    background-color: transparent;
+    /* text-decoration: underline; */
+    color: #000;
+    padding: 0px;;
+}
+
+
+/* -------------------------------- */
+.dropdown-mob {
+    display: none;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .42) 100vw, transparent calc(50vw + 1100px));
+    width: 100%;
+    top: 72px;
+    left: 0;
+    position: absolute;
+}
+
+
+.dropdown-mob-cont{
+    position: absolute;
+    top: 0;
+    left: 317px;
+    background-color: #fff; /* Example background color */
+    /* box-shadow: 8px 16px rgba(0,0,0,0.2); */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: max-content; 
+    border-radius:0px 0px 10px 10px;
+    display: flex;
+    gap: 45px;
+    border-top: 1px solid #c2c2c2c9;
+}
+
+
+.dropdown-mob  a{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown-mob.show {
+    display: flex;
+}
+
+.dropdown-mob-section {
+    padding: 20px;
+}
+
+.dropdown-mob-section h3 {
+    font-family: 'SamsungOne 700';
+    margin-top: 0;
+    font-size: 14px;
+    font-weight:bold;
+    color: #000;
+}
+
+.dropdown-mob-section ul {
+    font-family: 'SamsungOne 700';
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dropdown-mob-section ul li {
+    margin: 10px 0px;
+}
+
+.dropdown-mob-section ul li a {
+    /* text-decoration: none; */
+    color: #7c7b7b;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.dropdown-mob-section ul li a:hover {
+    background-color: transparent;
+    /* text-decoration: underline; */
+    color: #000;
+    padding: 0px;;
+}
+
+.vertical-line {
+    width: 1px; /* Width of the vertical line */
+    height: 95%; /* Height of the vertical line */
+    background-color: #c1c1c1; /* Color of the line */
+    display: inline-block;
+    margin: 0 20px; /* Optional: Add some margin */
+}
+
+
+
+
+/* ======================== */
+.dropdown-tv {
+    display: none;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .42) 100vw, transparent calc(50vw + 1100px));
+    width: 100%;
+    top: 72px;
+    left: 0;
+    position: absolute;
+}
+
+
+.dropdown-tv-cont{
+    position: absolute;
+    top: 0;
+    left: 89px;
+    background-color: #fff; /* Example background color */
+    /* box-shadow: 8px 16px rgba(0,0,0,0.2); */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: max-content; 
+    border-radius:0px 0px 10px 10px;
+    display: flex;
+    gap: 96px;
+    border-top: 1px solid #c2c2c2c9;
+}
+
+
+.dropdown-tv  a{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown-tv.show {
+    display: flex;
+}
+
+.dropdown-tv-section {
+    padding: 20px;
+}
+
+.dropdown-tv-section h3 {
+    font-family: 'SamsungOne 700';
+    margin-top: 0;
+    font-size: 14px;
+    font-weight:bold;
+    color: #000;
+}
+
+.dropdown-tv-section ul {
+    font-family: 'SamsungOne 700';
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dropdown-tv-section ul li {
+    margin: 10px 0px;
+}
+
+.dropdown-tv-section ul li a {
+    /* text-decoration: none; */
+    color: #7c7b7b;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.dropdown-tv-section ul li a:hover {
+    background-color: transparent;
+    /* text-decoration: underline; */
+    color: #000;
+    padding: 0px;;
+}
+
+/* ==================================== */
+
+.dropdown-home {
+    display: none;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .42) 100vw, transparent calc(50vw + 1100px));
+    width: 100%;
+    top: 72px;
+    left: 0;
+    position: absolute;
+}
+
+
+.dropdown-home-cont{
+    position: absolute;
+    top: 0;
+    left: 89px;
+    background-color: #fff; /* Example background color */
+    /* box-shadow: 8px 16px rgba(0,0,0,0.2); */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: max-content; 
+    border-radius:0px 0px 10px 10px;
+    display: flex;
+    gap: 77px;
+    border-top: 1px solid #c2c2c2c9;
+}
+
+
+.dropdown-home  a{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown-home.show {
+    display: flex;
+}
+
+.dropdown-home-section {
+    padding: 20px;
+}
+
+.dropdown-home-section h3 {
+    font-family: 'SamsungOne 700';
+    margin-top: 0;
+    font-size: 14px;
+    font-weight:bold;
+    color: #000;
+}
+
+.dropdown-home-section ul {
+    font-family: 'SamsungOne 700';
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dropdown-home-section ul li {
+    margin: 10px 0px;
+}
+
+.dropdown-home-section ul li a {
+    /* text-decoration: none; */
+    color: #7c7b7b;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.dropdown-home-section ul li a:hover {
+    background-color: transparent;
+    /* text-decoration: underline; */
+    color: #000;
+    padding: 0px;;
+}
+
+
+
+/* ====================== */
+.dropdown-compute {
+    display: none;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .42) 100vw, transparent calc(50vw + 1100px));
+    width: 100%;
+    top: 72px;
+    left: 0;
+    position: absolute;
+}
+p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+h6{
+    margin-bottom: 0px;
+}
+
+.dropdown-compute-cont{
+    position: absolute;
+    top: 0;
+    left: 89px;
+    background-color: #fff; /* Example background color */
+    /* box-shadow: 8px 16px rgba(0,0,0,0.2); */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: max-content; 
+    border-radius:0px 0px 10px 10px;
+    display: flex;
+    gap: 77px;
+    border-top: 1px solid #c2c2c2c9;
+}
+
+
+.dropdown-compute  a{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown-compute.show {
+    display: flex;
+}
+
+.dropdown-compute-section {
+    padding: 20px;
+}
+
+.dropdown-compute-section h3 {
+    font-family: 'SamsungOne 700';
+    margin-top: 0;
+    font-size: 14px;
+    font-weight:bold;
+    color: #000;
+}
+
+.dropdown-compute-section ul {
+    font-family: 'SamsungOne 700';
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dropdown-compute-section ul li {
+    margin: 10px 0px;
+}
+
+.dropdown-compute-section ul li a {
+    /* text-decoration: none; */
+    color: #7c7b7b;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.dropdown-compute-section ul li a:hover {
+    background-color: transparent;
+    /* text-decoration: underline; */
+    color: #000;
+    padding: 0px;;
+}
+
+/* ==================== */
+
+.dropdown-display {
+    display: none;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .42) 100vw, transparent calc(50vw + 1100px));
+    width: 100%;
+    top: 72px;
+    left: 0;
+    position: absolute;
+}
+
+
+.dropdown-display-cont{
+    position: absolute;
+    top: 0;
+    left: 676px;
+    padding-right: 30px;
+    background-color: #fff; /* Example background color */
+    /* box-shadow: 8px 16px rgba(0,0,0,0.2); */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: max-content; 
+    border-radius:0px 0px 10px 10px;
+    display: flex;
+    gap: 62px;
+    border-top: 1px solid #c2c2c2c9;
+}
+
+
+.dropdown-display  a{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown-display.show {
+    display: flex;
+}
+
+.dropdown-display-section {
+    padding: 20px;
+}
+
+.dropdown-display-section h3 {
+    font-family: 'SamsungOne 700';
+    margin-top: 0;
+    font-size: 14px;
+    font-weight:bold;
+    color: #000;
+}
+
+.dropdown-display-section ul {
+    font-family: 'SamsungOne 700';
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dropdown-display-section ul li {
+    margin: 10px 0px;
+}
+
+.dropdown-display-section ul li a {
+    /* text-decoration: none; */
+    color: #7c7b7b;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.dropdown-display-section ul li a:hover {
+    background-color: transparent;
+    /* text-decoration: underline; */
+    color: #000;
+    padding: 0px;;
+}
+
+/* ====================== to test the nav section */
+
+.dropdown-ac {
+    display: none;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .42) 100vw, transparent calc(50vw + 1100px));
+    width: 100%;
+    top: 72px;
+    left: 0;
+    position: absolute;
+}
+
+
+.dropdown-ac-cont{
+    position: absolute;
+    top: 0;
+    left: 948px;
+    padding-right: 30px;
+    background-color: #fff; /* Example background color */
+    /* box-shadow: 8px 16px rgba(0,0,0,0.2); */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: max-content; 
+    border-radius:0px 0px 10px 10px;
+    display: flex;
+    gap: 62px;
+    border-top: 1px solid #c2c2c2c9;
+}
+
+
+.dropdown-ac  a{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown-ac.show {
+    display: flex;
+}
+
+.dropdown-ac-section {
+    padding: 20px;
+}
+
+.dropdown-ac-section h3 {
+    font-family: 'SamsungOne 700';
+    margin-top: 0;
+    font-size: 14px;
+    font-weight:bold;
+    color: #000;
+}
+
+.dropdown-ac-section ul {
+    font-family: 'SamsungOne 700';
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dropdown-ac-section ul li {
+    margin: 10px 0px;
+}
+
+.dropdown-ac-section ul li a {
+    /* text-decoration: none; */
+    color: #7c7b7b;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.dropdown-ac-section ul li a:hover {
+    background-color: transparent;
+    /* text-decoration: underline; */
+    color: #000;
+    padding: 0px;;
+}
+
+/* ========================= */
+.dropdown-support {
+    display: none;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .42) 100vw, transparent calc(50vw + 1100px));
+    width: 100%;
+    top: 72px;
+    left: 0;
+    position: absolute;
+}
+
+
+.dropdown-support-cont{
+    position: absolute;
+    top: 0;
+    left: 538px;
+    background-color: #fff; /* Example background color */
+    /* box-shadow: 8px 16px rgba(0,0,0,0.2); */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: max-content; 
+    border-radius:0px 0px 10px 10px;
+    display: flex;
+    gap: 48px;
+    border-top: 1px solid #c2c2c2c9;
+}
+
+
+.dropdown-support  a{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown-support.show {
+    display: flex;
+}
+
+.dropdown-support-section {
+    padding: 20px;
+}
+
+.dropdown-support-section h3 {
+    font-family: 'SamsungOne 700';
+    margin-top: 0;
+    font-size: 14px;
+    font-weight:bold;
+    color: #000;
+}
+
+.dropdown-support-section ul {
+    font-family: 'SamsungOne 700';
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dropdown-support-section ul li {
+    margin: 10px 0px;
+}
+
+.dropdown-support-section ul li a {
+    /* text-decoration: none; */
+    color: #7c7b7b;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.dropdown-support-section ul li a:hover {
+    background-color: transparent;
+    /* text-decoration: underline; */
+    color: #000;
+    padding: 0px;;
+}
+.wrapper{
+    max-width: 1480px;
+    width: 94%;
+    margin: 0 auto;
+}
+
+
+
+/* #spot-mid{
+    width: 100%;
+    margin-bottom: 40px;
+    height: 640px;
+    display: block;
+    
+}
+
+.slide-img{
+    width: 1440px;
+    height: 640px;
+} */
+
+#spot-mid {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 640px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide-img, .slide-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 10px;
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.carousel-control.next {
+    right: 10px;
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+
+
+
+
+
+#product-deals{
+    margin: 30px 0px 30px 0px;
+}
+#product-deals .product-head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#product-deals .product-head h2{
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1.2;
+    letter-spacing: 0rem;
+    text-align: center;
+}
+#product-deals .product-subtop{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    width: 100%;
+}
+#product-deals .product-subtop .tab-list{
+    list-style:  none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    line-height: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+#product-deals .product-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#product-deals .product-content .product-left{
+    width: 50%;
+    margin-right: 24px;
+    height: 94vh;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image:
+     url("https://images.samsung.com/is/image/samsung/assets/in/home/bigtile_dekstop.jpg?$684_684_JPG$");
+}
+#product-deals .product-content .product-left .product-left-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 520px;
+    align-items: center;
+}
+.product-content .product-left .product-left-text h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+.product-content .product-left .product-left-text p{
+    font-size: 18px;
+    
+}
+#product-deals .product-content .product-left .sale{
+    background-color:rgb(236, 4, 4) ;
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#product-deals .product-content .product-left .sale small{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+}
+#product-deals .product-content .product-right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#product-deals .product-content .product-right .product-right1{
+    display: flex;
+    gap: 24px;
+}
+#product-deals .product-content .product-right .product-right1  .right-img1 .new{
+    background-color:rgb(4, 143, 236) ;
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#product-deals .product-content .product-right .product-right1  .right-img1 .new small{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+}
+#product-deals .product-content .product-right .product-right1 .right-img1{
+    height: 330px;
+    border-radius: 20px;
+    width: 330px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    background-image: 
+    url("https://images.samsung.com/is/image/samsung/assets/in/home/Small-Tile_330x330-X2.jpg?$330_330_JPG$");
+}
+#product-deals .product-content .product-right .product-right1  .right-img1 .right-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 170px;
+   
+}
+.product-right .product-right1  .right-img2 .right-card-text p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.product-right .product-right1  .right-img3 .right-card-text p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.product-right .product-right1  .right-img4 .right-card-text p{
+    font-size: 18px;
+    font-weight: bold;
+}
+#product-deals .product-content .product-right .product-right1  .right-img2 .right-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 210px;
+   
+}
+#product-deals .product-content .product-right .product-right1  .right-img3 .right-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 210px;
+   
+}
+#product-deals .product-content .product-right .product-right1  .right-img4 .right-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 230px;
+   
+}
+#product-deals .product-content .product-right .product-right1  .right-img1 .right-card-text p{
+    font-size: 18px;
+    font-weight: bold;
+}
+#product-deals .product-content .product-right .product-right1 .right-img2{
+    height: 330px;
+    width: 330px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    background-image:
+     url("https://images.samsung.com/is/image/samsung/assets/in/home/330x330_RS76CG8003S9HL1.jpg?$330_330_JPG$");
+}
+#product-deals .product-content .product-right .product-right1 .right-img3{
+    height: 330px;
+    width: 330px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: 
+    url("https://images.samsung.com/is/image/samsung/assets/in/home/SmallTile_330x330Buds3.jpg?$330_330_JPG$");
+}
+#product-deals .product-content .product-right .product-right1 .right-img4{
+    height: 330px;
+    width: 330px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: 
+    url("https://images.samsung.com/is/image/samsung/assets/in/home/330x330_Q60D_.jpg?$330_330_JPG$");
+}
+#mobile{
+    width: 100%;
+    height: 110vh;
+    background-image:url("https://images.samsung.com/is/image/samsung/assets/in/home/PM_Fold6_1440x810_.jpg?$1440_810_JPG$") ;
+}
+#mobile .mobile-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+#mobile .mobile-head h3{
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1.2;
+    letter-spacing: 0rem;
+    text-align: center;
+}
+#mobile .mobile-head .mobile-sub-h{
+    display: flex;
+    gap: 40px;
+}
+#mobile .mobile-head .mobile-sub-h .sub-tab {
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    line-height: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+#mobile .mobile-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 455px;
+}
+#mobile .mobile-content h2{
+    font-size: 48px;
+    font-weight: bolder;
+}
+#mobile .mobile-content p{
+    width: 390px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+}
+#mobile .mobile-content .mobile-button{
+    display: flex;
+    padding-top: 15px;
+    gap: 20px;
+}
+#mobile .mobile-content .mobile-button span{
+    text-decoration: underline;
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+#mobile .mobile-content .mobile-button button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+#tv{
+    width: 100%;
+    height: 110vh;
+    background-image: 
+    url("https://images.samsung.com/is/image/samsung/assets/in/home/Slot1_desktop.jpg?$1440_810_JPG$");
+}
+#tv .tv-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+#tv .tv-head .tv-sub-h{
+    display: flex;
+    gap: 45px;
+}
+#tv .tv-head  h3{
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1.2;
+    letter-spacing: 0rem;
+    text-align: center;
+}
+#tv .tv-head .tv-sub-h .tv-tab{
+    list-style: none;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    line-height: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+#tv .tv-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 480px;
+}
+#tv .tv-content h2{
+    font-size: 48px;
+    font-weight: bolder;
+}
+#tv .tv-content p{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+}
+#tv .tv-content button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+#home{
+    width: 100%;
+    height: 110vh;
+    background-image: 
+    url("https://images.samsung.com/is/image/samsung/assets/in/home/DA_Slot-1_Desktop.jpg?$1440_810_JPG$");
+}
+#home .home-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+#home .home-head .home-sub-h{
+    display: flex;
+    gap: 45px;
+}
+#home .home-head  h3{
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1.2;
+    letter-spacing: 0rem;
+    text-align: center;
+}
+#home .home-head .home-sub-h .home-tab{
+    list-style: none;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    line-height: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+#home .home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 480px;
+}
+#home .home-content h2{
+    font-size: 48px;
+    font-weight: bolder;
+}
+#home .home-content p{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+}
+#home .home-content button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+#iproducts{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#iproducts .iproduct-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#iproducts .iproduct-head h3{
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1.2;
+    letter-spacing: 0rem;
+    text-align: center;
+}
+#iproducts .card-iproduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#iproducts .card-iproduct .icard1{
+    width: 264px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 5px 14px 24px 14px;
+    border-radius: 20px;
+}
+#iproducts .card-iproduct .icard2{
+    width: 264px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 5px 14px 24px 14px;
+    border-radius: 20px;
+}
+
+#iproducts .card-iproduct .icard1 .new{
+    background-color:rgb(4, 143, 236) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 220px;
+    width: 35px;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#iproducts .card-iproduct .icard1 .new small{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+}
+#iproducts .card-iproduct .icard1 h4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#iproducts .card-iproduct .icard1 .colour{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+#iproducts .card-iproduct .icard1 .colour1{
+    display: flex;
+    align-items: center;
+    margin-top: 31px;
+}
+#iproducts .card-iproduct .icard1 .colour-circle{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+
+}
+#iproducts .card-iproduct .icard1 .colour-circle .circle-colour{
+    width: 20%;
+}
+#iproducts .card-iproduct .icard1 .colour-circle .circle-colour img{
+    display: block;
+    width: 100%;
+}
+#iproducts .card-iproduct .icard1 .colour-circle1{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+
+}
+#iproducts .card-iproduct .icard1 .colour-circle1 .circle-colour1{
+    width: 30%;
+}
+#iproducts .card-iproduct .icard1 .colour-circle1 .circle-colour1 img{
+    display: block;
+    width: 100%;
+}
+
+#iproducts .card-iproduct .icard1 .colour small{
+    font-size: 13px;
+    font-weight: bold;
+}
+#iproducts .card-iproduct .icard1 .colour span{
+    font-size: 13px;
+}
+#iproducts .card-iproduct .icard1 .price-iproduct{
+    display: flex;
+    width: 100%;
+}
+#iproducts .card-iproduct .icard1 p{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 50px;
+}
+#iproducts .card-iproduct .icard1 p span{
+    color: rgb(0, 132, 255);
+    font-weight: bold;
+}
+#iproducts .card-iproduct .icard2 p span{
+    color: rgb(0, 132, 255);
+    font-weight: bold;
+}
+#iproducts .card-iproduct .icard2 p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+#iproducts .card-iproduct .icard1 .colour1 small{
+    font-size: 13px;
+    font-weight: bold;
+}
+#iproducts .card-iproduct .icard1 .colour1 span{
+    font-size: 13px;
+}
+#iproducts .card-iproduct .icard2 button{
+    margin-top: 67px;
+    padding: 4px 8px;
+    color: #000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#iproducts .card-iproduct .icard2 h4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 37px;
+
+}
+#iproducts .card-iproduct .icard1 h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+#iproducts .card-iproduct .icard1 a{
+    font-size: 10px;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+#iproducts .card-iproduct .icard1 .lap-button button{
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 85px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+#iproducts .card-iproduct .icard2 h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+#iproducts .card-iproduct .icard2 a{
+    font-size: 10px;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+#iproducts .card-iproduct .icard2 .lap-button button{
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 85px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+#explore{
+    margin-top: 20px;
+}
+#explore .explore-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+#explore .explore-head h3{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0rem;
+    text-align: center;
+}
+#explore .explore-content{
+    display: flex;
+    margin-top: 50px;
+}
+
+#explore .explore-content .explore-left img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+#explore .explore-content .explore-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 684px;
+    padding-left: 50px;
+    width: 50%;
+    
+}
+#explore .explore-content .explore-right .exp-right-nb{
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    margin-bottom: 49px;
+    
+}
+#explore .explore-content .explore-right .exp-right-nb small{
+    font-size: 20px;
+    font-weight: bold;
+}
+#explore .explore-content .explore-right .exp-right-nb p{
+    font-size: 28px;
+    font-weight: bold;
+}
+#bottom{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+#bottom .bottom-head{
+    margin-top: 60px;
+}
+#bottom .bottom-head h3{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0rem;
+    text-align: center;
+}
+#bottom .searchbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+#bottom .searchbar .searchbarinput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 448px;
+    height: 50px;
+    background: #f7f7f7;
+    border: 1px solid ;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#bottom .searchbar .searchbarinput .search-img{
+    width: 6%;
+}
+#bottom .searchbar .searchbarinput .search-img img{
+    display: block;
+    width: 100%;
+}
+#bottom .searchbar .searchbarinput input{
+    border: none;
+    background: #f7f7f7;
+    width: 360px;
+    font-size: 18px;
+}
+#bottom .searchbar .search-bottom{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+#bottom .searchbar .search-bottom button{
+  border-radius: 20px;
+  border-style: none;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #bdb7b7;
+  font-size: 12px;
+  padding: 6px 15px;
+  background-color: #fff;
+}
+#footer{
+    margin: 50px 96px 50px 96px;
+}
+#footer .footer-top{
+    margin-top: 30px;
+}
+#footer .footer-top p{
+    font-size: 13px;
+    margin-bottom: 10px;
+}

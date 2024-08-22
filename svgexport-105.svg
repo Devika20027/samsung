@@ -1,0 +1,8 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="36" height="35.999" viewBox="0 0 36 35.999" data-di-res-id="9eb4b836-ff206224" data-di-rand="1723785481639">
+					<g transform="translate(-18.001 9)">
+						<rect width="36" height="35.999" transform="translate(18.001 -9)" fill="none"></rect>
+						<path d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z" transform="translate(18.001 -9)" fill="#B3AB9E"></path>
+						<!--/* [D] 제일 마지막 태그인 path의 fill 속성 값 변경 제외 */-->
+						<path d="M18,1A17,17,0,0,0,5.979,30.019,17,17,0,1,0,30.02,5.979,16.889,16.889,0,0,0,18,1m0-1A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z" transform="translate(18.001 -9)" fill="#000000" fill-opacity="0.5"></path>
+					</g>
+				</svg>
